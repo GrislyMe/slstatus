@@ -14,6 +14,6 @@ with open("/sys/class/power_supply/BAT0/capacity") as bat:
 with open("/sys/class/power_supply/BAT0/status") as status:
     current = status.readline().split()
     if current[0] != "Discharging":
-        print("  ﮣ", perc)
+        print("   ﮣ", perc)
     else:
         print(" ")
